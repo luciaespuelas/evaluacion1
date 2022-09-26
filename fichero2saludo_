@@ -1,0 +1,5 @@
+# programa de iniciación.
+# me pregunta el nombre y responde saludandome.
+print ("como te llamas?")
+nombre= input() 
+print (" hola "+ nombre + " encantado de conocerte.")
