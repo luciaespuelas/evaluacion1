@@ -1,0 +1,15 @@
+# suma los 10 primeros numeros:
+def calcula_series() :
+    n1=int(1)
+    n2=int(2)
+    n3=int(3)
+    n4=int(4)
+    n5=int(5)
+    n6=int(6)
+    n7=int(7)
+    n8=int(8)
+    n9=int(9)
+    n10=int(10)
+    suma=int((n1+n2+n3+n4+n5+n6+n7+n8+n9+n10))
+    print (suma)
+calcula_series()
