@@ -23,3 +23,12 @@ def calcula_media():
     print (media)
     
 calcula_media()
+
+-------------------------------------
+def variable():
+    n1=":"
+    n2=")"
+    suma=(n1+n2)
+    print (suma)
+    
+variable()
