@@ -1,0 +1,9 @@
+def mult3_():
+
+    for cont in range(1,10):
+     var=3 
+     num=int(input("dime un numero: "))
+     var=(num*var)
+     print(var)
+    
+mult3_()
