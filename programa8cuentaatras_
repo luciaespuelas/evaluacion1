@@ -1,5 +1,0 @@
-def cuenta_atras() :
-    for cont in range(10,-1,-1):
-        print (cont)
-    print ("FUERA")
-cuenta_atras()
