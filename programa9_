@@ -1,0 +1,17 @@
+# lee 20 numeros enteros
+#sumamos los pares por un lado
+#sumamos los impares por otro
+def suma_par_impar():
+    suma_par=0
+    suma_impar=0
+    for cont in range (1,6):
+        num=int(input("dime un numero: "))
+        if(num%2==0):
+            print ("par")#rama de la vd
+        else:
+            print ("impar")#si no 
+            suma_impar=suma_par+num
+    print("la suma de los PARES =" +str(suma_par))
+    print("la suma de los IMPAR =" +str(suma_impar))
+            
+suma_par_impar()
