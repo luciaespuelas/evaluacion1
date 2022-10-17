@@ -1,0 +1,23 @@
+#te pregunta que hora es 
+#y te dice buenos dias/tardes 
+#depende de la hora
+def saludador_() :
+    while True:
+        hora=int(input("dime que hora es: "))
+        if(hora<=0 or hora>=24):
+            print("eres bobi")
+            continue
+        
+        else:
+            if(hora>=6 and hora<=12):
+                print("buenos días")
+            else:
+                if(hora>12 and hora<=20):
+                    print ("buenas tardes")
+                else:
+                    print("buenas noches")
+            break
+saludador_()
+
+#hay que transformar la variable de input hora a int para que lo pueda leer si manejaramos tambien minutos la lectura del prigrama se complicaria
+#con el while true y el cotinue creas un bucle en el que la maquina ejecuta lo q le dicves hasta que consigue un valor valido entonces break y rompe el bucle
