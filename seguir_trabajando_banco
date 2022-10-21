@@ -112,16 +112,16 @@ def banco_() :
         sacar=int(input())
         if ((num-sacar) <0) :
             print ("no se puede sacrar dinero")
-            print (str("tu saldo actutal es:") +  str(num))
+            print (str("tu saldo actutal es: ") +  str(num))
             break
         else:
             if (sacar)==0 :
                 print ("no has sacado dinero")
-                print (str("tu saldo actutal es:") +  str(num))
+                print (str("tu saldo actutal es: ") +  str(num))
             else:
                 if (sacar%5==0) :
                     resto= (num-sacar)
-                    print (str(resto) + str(num))
+                    print (str("tu saldo actual es de: ") + str(resto))
                     num=(resto)
                     print ("seguir?")
                     si=input()
