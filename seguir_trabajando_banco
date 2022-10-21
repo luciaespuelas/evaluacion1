@@ -1,0 +1,14 @@
+#blablabla
+print("cuanto dinero quieres meter?")
+num=int(input())
+def banco_() :
+    while True:
+        print ("cuanto dinero quieres sacar")
+        sacar=int(input())
+        if (sacar)==0:
+            print ("no has sacado dinero")
+            print (num)
+        else:
+            if (sacar%5==0) :
+                print ("dsd")
+banco_()
