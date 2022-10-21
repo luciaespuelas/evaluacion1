@@ -67,7 +67,7 @@ def banco_() :
                     break
             else:
                 print ("error")
-    print ("seguir")
+    print ("end")
   
     
 banco_()
