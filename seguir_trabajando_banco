@@ -12,3 +12,33 @@ def banco_() :
             if (sacar%5==0) :
                 print ("dsd")
 banco_()
+
+
+
+----------------------------------------------------
+def banco_() :
+    print ("cuantodinero quieres meter? ")
+    num=int(input())
+    while True:
+        print ("cuanto quieres sacar? ")
+        sacar=int(input())
+        if (sacar)==0 :
+            print ("no has sacado dinero")
+            print (num)
+        else:
+            if (sacar%5==0) :
+                resto= (num-sacar)
+                print (resto)
+                print ("seguir?")
+                si=input()
+                if (si==si):
+                    print ("AA")
+                else:
+                    print ("Dsd")
+            else:
+                print ("error")
+    print ("seguir")
+  
+    
+banco_()
+
