@@ -71,3 +71,34 @@ def banco_() :
   
     
 banco_()
+
+----------------------------------------- FUNCIONA
+def banco_() :
+    num=0
+    print ("cuantodinero quieres meter? ")
+    num=int(input())
+    while True:
+        print ("cuanto quieres sacar? ")
+        sacar=int(input())
+        if (sacar)==0 :
+            print ("no has sacado dinero")
+            print (num)
+        else:
+            if (sacar%5==0) :
+                resto= (num-sacar)
+                print (resto)
+                num=(resto)
+                print ("seguir?")
+                si=input()
+                if (si=="si") :
+                    print ("AA")
+                    continue
+                else:
+                    break
+            else:
+                print ("error")
+    print ("end")
+  
+    
+banco_()
+
