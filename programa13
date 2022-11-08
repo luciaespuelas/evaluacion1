@@ -1,0 +1,13 @@
+#programa detecta error inf dni con bucle ilegal while true/break/continue
+while True:
+    letras="TRWAGMYFPDXBNJZQVHLCKE"
+    dni=int(input("dime tu dni: "))
+    letra=input("cual es la letra: ")
+    resto=dni%23
+
+    if (letra==letras[resto]):
+        print ("dni correcto")
+        break
+    else :
+        print ("intentalo de nuevo")
+        continue
