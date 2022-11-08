@@ -11,3 +11,20 @@ while True:
     else :
         print ("intentalo de nuevo")
         continue
+
+
+-------------------------------------------------------------------------------------------------------------------------------
+
+#programa detecta error inf dni con bucle legal variable interruptora
+seguir=True
+while(seguir==True):
+    letras="TRWAGMYFPDXBNJZQVHLCKE"
+    dni=int(input("dime tu dni: "))
+    letra=input("cual es la letra: ")
+    resto=dni%23
+
+    if (letra==letras[resto]):
+        print ("dni correcto")
+        seguir=False
+    else :
+        print ("intentalo de nuevo")
