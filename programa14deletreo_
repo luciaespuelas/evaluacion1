@@ -1,0 +1,15 @@
+palabra="pizza"
+print(len(palabra))
+for edfg in range(0,len(palabra)):
+    print(palabra[edfg])
+
+--------------------------------------------------------------------------
+#pide una palabra y devuelve las letras
+
+def deletreo():
+    
+    palabra=input("dime palabra: ")
+    print(len(palabra))
+    for x in range(0,len(palabra)):
+        print(palabra[x])
+deletreo()
