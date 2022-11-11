@@ -28,3 +28,22 @@ while(seguir==True):
         seguir=False
     else :
         print ("intentalo de nuevo")
+
+
+-----------------------------------------------
+NO FUNCIONA PERO DECIRLE A DUASO COMO SEGUIR
+#programa detecta error inf dni con bucle legal variable interruptora
+seguir=True
+while(seguir==True):
+    letras="TRWAGMYFPDXBNJZQVHLCKE"
+    dni=(input("dime tu dni: "))
+    n=""
+    for num in range(0,len(dni)-1):
+        n=n+dni[num]
+    resto=letras[int(n%23]
+    print(dni[len(dni)-1])
+    if (dni[len(dni)-1]==letras[resto]):
+        print ("dni correcto")
+        seguir=False
+    else :
+        print ("intentalo de nuevo")
