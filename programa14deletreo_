@@ -58,7 +58,7 @@ def deletreo():
         if (esConsonante(palabra[cont])==True):
             cuentaconsonantes=cuantaconsonantes+1
     print("Tiene "+str(cuentavocales) +" vocales")
-    print("Tiene"+str(cuentaconsonantes)+ "consonantes")
+    print("Tiene "+str(cuentaconsonantes)+ "consonantes")
 deletreo()
 -----------------------------------------------------------------------------------------------------------------
 # Pide una palabra y te devuelve sus letras y su longitud. Me dice cuántas vocales tiene
@@ -84,7 +84,7 @@ def deletreo():
         if (esConsonante(palabra[cont])==True):
             cuentaconsonantes=cuantaconsonantes+1
     print("Tiene "+str(cuentavocales) +" vocales")
-    print("Tiene"+str(cuentaconsonantes)+ "consonantes")
+    print("Tiene "+str(cuentaconsonantes)+ "consonantes")
 deletreo()
 
 ----------------------------------------------------------------------------------------------------
