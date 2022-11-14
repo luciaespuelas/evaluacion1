@@ -1,0 +1,14 @@
+# dime una contraseña
+# tenga mas d 8 caracteres 
+# may y mins numeros 
+# al menos 1 caracter especial
+def caracteres(contraseña):
+    variable=False
+    if (caracteres==8):
+        variable=True
+def contraseña():
+    contraseña=input("dime cual es tu contraseña: " )
+    for cont in range (0,len(contraseña)):
+        if (caracteres(contraseña[cont])==True):
+            print("numero de caracteres correcto")
+contraseña()
