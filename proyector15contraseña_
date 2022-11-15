@@ -2,13 +2,24 @@
 # tenga mas d 8 caracteres 
 # may y mins numeros 
 # al menos 1 caracter especial
-def caracteres(contraseña):
-    variable=False
-    if (caracteres==8):
-        variable=True
-def contraseña():
-    contraseña=input("dime cual es tu contraseña: " )
-    for cont in range (0,len(contraseña)):
-        if (caracteres(contraseña[cont])==True):
-            print("numero de caracteres correcto")
-contraseña()
+
+def password():
+    errores=0
+    ispassword=input("dime cual es tu contrasena: " )
+    if (len(ispassword)==8):
+        print("contiene los 8 caracteres necesarios")
+    else:
+        print("no contiene los 8 caracteres necesarios")
+        errores=errores+1
+    if(ispassword.islower() or ispassword.isupper()):
+        print("incumple el criterio debe tener mayus y mins")
+        errores=errores+1
+    else:
+         print("cumple el criterio debe tener mayus y mins")
+
+
+    if(errores!=0):
+        print("su contraseña incumple "+str(errores)+" criterios")
+     
+    
+password()
