@@ -11,12 +11,16 @@ def password():
     else:
         print("no contiene los 8 caracteres necesarios")
         errores=errores+1
-    if(ispassword.islower() or ispassword.isupper()):
-        print("incumple el criterio debe tener mayus y mins")
+    
+    if(ispassword.isalnum()):
+        print("son todo numeros, tiene que haber letras")
         errores=errores+1
     else:
-         print("cumple el criterio debe tener mayus y mins")
-
+        if(ispassword.islower() or ispassword.isupper()):
+            print("no cumple el criterio debe tener mayus y mins")
+            errores=errores+1
+        else:
+            print("cumple el criterio debe tener mayus y mins")
 
     if(errores!=0):
         print("su contraseña incumple "+str(errores)+" criterios")
