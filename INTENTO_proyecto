@@ -1,3 +1,51 @@
 #sistema de como seria un juego de cohetes que dispara.
 #mi nave espacial se va a mover en ejex con dos botones a b.
 nave=
+
+
+
+
+
+#sistema de como seria un juego de cohetes que dispara.
+#mi nave espacial se va a mover en ejex con dos botones a b.
+#suponemos una pantalla de 7 leds la nave empieza en el centro y solo se mueve en ox
+
+def target():
+    t=0
+    f=1
+    t=f+t
+    print(t)
+    
+    y=6#target se mueve en top x(t)y
+    
+
+def spacecraft():
+    n=4#n=posicion de la nave en ox   
+    t=0
+    while True:
+        def target():
+            t=0
+            f=1
+            t=f+t
+            print(t)
+        press=input("press: ")
+        if (press=="a"):
+            moveR=n+1#suma1 ox right
+            if (moveR>7):#control de q no se salga de la pantalla
+                moveR=moveR-1
+                print(moveR)
+            n=moveR#set position actual=n
+            print(str("spacecraft´s position in (")+str(n)+str(",0)"))
+        
+        if (press=="b"):
+            moveL=n-1#suma1 ox left
+            if (moveL<0):#control de q no se salga de la pantalla
+                moveL=moveL+1
+            n=moveL#set position actual=n
+            print(str("spacecraft´s position in (")+str(n)+str(",0)"))
+        target()
+        if(press=="ab"):
+            disparar
+    
+        continue
+spacecraft()
