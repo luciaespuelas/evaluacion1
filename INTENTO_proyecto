@@ -1,33 +1,27 @@
 #sistema de como seria un juego de cohetes que dispara.
 #mi nave espacial se va a mover en ejex con dos botones a b.
-nave=
-
-
-
-
-
-#sistema de como seria un juego de cohetes que dispara.
-#mi nave espacial se va a mover en ejex con dos botones a b.
 #suponemos una pantalla de 7 leds la nave empieza en el centro y solo se mueve en ox
+def target_():
+    pos=x-1
+    x=pos
+    if (pos<0):
+        target2_()
+    print(str("target in ")+str(x))
 
-def target():
-    t=0
-    f=1
-    t=f+t
-    print(t)
-    
-    y=6#target se mueve en top x(t)y
-    
+def target2_():
+        x=0
+        pos=x+1
+        x=pos
+        if (pos>7):
+            target_()  
+        print(str("target in ")+str(x))
+
 
 def spacecraft():
+    x=0
     n=4#n=posicion de la nave en ox   
     t=0
     while True:
-        def target():
-            t=0
-            f=1
-            t=f+t
-            print(t)
         press=input("press: ")
         if (press=="a"):
             moveR=n+1#suma1 ox right
@@ -35,17 +29,38 @@ def spacecraft():
                 moveR=moveR-1
                 print(moveR)
             n=moveR#set position actual=n
+            t=t+1
+            print(str("time equal ")+str(t)+str("s"))
             print(str("spacecraft´s position in (")+str(n)+str(",0)"))
-        
+
+            pos=x+1
+            x=pos
+            if (pos>7):
+                target_()
+            else:
+                print(str("target in ")+str(x))
+
+
         if (press=="b"):
             moveL=n-1#suma1 ox left
             if (moveL<0):#control de q no se salga de la pantalla
                 moveL=moveL+1
             n=moveL#set position actual=n
+            t=t+1
+            print(str("time equal ")+str(t)+str("s"))
             print(str("spacecraft´s position in (")+str(n)+str(",0)"))
-        target()
+
+            pos=x+1
+            x=pos
+            if (pos>7):
+                target_()
+            else:
+                print(str("target in ")+str(x))
+
+            target_()
         if(press=="ab"):
             disparar
     
         continue
+
 spacecraft()
