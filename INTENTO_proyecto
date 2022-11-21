@@ -57,9 +57,10 @@ def spacecraft():
             else:
                 print(str("target in ")+str(x))
 
-            target_()
+            
         if(press=="ab"):
-            disparar
+            print(("disparo a (")+str(n)+(",7)"))
+
     
         continue
 
