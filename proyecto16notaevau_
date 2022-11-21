@@ -1,0 +1,20 @@
+#calcular nota acceso
+a=float(input("nota ingles: "))
+b=float(input("nota mates: "))
+c=float(input("nota lengua: "))
+d=float(input("nota historia: "))
+if (a<4) or (b<4) or (c<4) or (d<4):
+    print("tienes que repetir la evau paleto")
+else:
+    MS=((a+b+c+d)/4)
+    print(("media evau es ")+ str(MS))
+    B=int(input("cual es tu media de bach: "))
+    NA=(0.4*(MS)+0.6*(B))
+    print(("nota de acceso es")+str(NA))
+    print("fase voluntaria")
+    e=float(input("primer examen voluntario: "))
+    f=float(input("segundo examen voluntario: "))
+    Q=float(input("cuanto pondera tu primer examen: "))
+    G=float(input("cuanto pondera tu segundo examen: "))
+    NM=NA+ (Q*e) + (G*f)
+    print(("tu nota de acceso es ")+str(NM))
