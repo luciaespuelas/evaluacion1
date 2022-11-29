@@ -1,0 +1,12 @@
+palabra=input("dime una palaba para jugar ")
+
+
+    
+large=len(palabra)
+print (("_ ") *large)
+dibujo=(("_ ")*large)
+letra=input("dime una letra ")
+otro=palabra.find(letra)
+repl = dibujo.replace((otro), (letra))
+print (repl)
+print (otro)
