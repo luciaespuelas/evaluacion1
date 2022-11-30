@@ -1,0 +1,6 @@
+palabra = "LUCIAESPUELAS"
+for y in range(0,len(palabra)):
+    print(palabra[y])
+    if y == 5:
+        print("culo te la inco")
+print("ACABADO")
