@@ -19,3 +19,32 @@ dolares=int(input("dime cuantos dolares tienes: "))
 euros=dolares*0.96
 print(str("tienes")+str(euros)+ str("euros"))
 #mira como quitar decimales de las respuestas
+
+
+#ejercicio3
+while True:
+    dia=int(input("dime un dia de la semana: "))
+    if ((dia)==1):
+        print ("lunes")
+        break
+    if ((dia)==2):
+        print ("martes")
+        break
+    if ((dia)==3):
+        print ("miercoles")
+        break
+    if ((dia)==4):
+        print ("jueves")
+        break
+    if ((dia)==5):
+        print ("viernes")
+        break
+    if ((dia)==6):
+        print ("sabado")
+        break
+    if ((dia)==7):
+        print ("domingo")
+        break
+    if ((dia)>7):
+        print ("repite")
+        
