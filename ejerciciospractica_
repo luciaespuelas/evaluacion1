@@ -13,3 +13,9 @@ while seguir==True:
         mult=a*b
         print(mult)
         seguir= False
+
+#ejercicio3
+dolares=int(input("dime cuantos dolares tienes: "))
+euros=dolares*0.96
+print(str("tienes")+str(euros)+ str("euros"))
+#mira como quitar decimales de las respuestas
