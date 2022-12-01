@@ -1,0 +1,15 @@
+#ejercicio1
+seguir=True
+while seguir==True:
+    
+    a=int(input("numero"))
+    b=int(input("numero"))
+    if ((a)==0):
+        print("no pueden ser 0")
+    if ((b)==0):
+        print("no pueden ser 0")
+
+    else :
+        mult=a*b
+        print(mult)
+        seguir= False
