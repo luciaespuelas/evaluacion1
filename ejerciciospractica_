@@ -48,3 +48,8 @@ while True:
     if ((dia)>7):
         print ("repite")
         
+#ejercicio4
+a=int(input("dime num: "))
+
+lista=["enero","febrero","marzo", "abril","mayo", "junio","julio", "agosto","septiembre","octubre","nobiembre","diciembre" ]
+print (lista[a])
